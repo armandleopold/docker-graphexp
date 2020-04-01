@@ -10,7 +10,7 @@ ENV PATH /usr/local/bin:$PATH
 RUN apt-get update && \
     apt-get -y install wget unzip && \
     cd /tmp && \
-    wget  https://github.com/erandal/graphexp/archive/master.zip && \
+    wget  https://github.com/armandleopold/graphexp/archive/master.zip && \
     unzip master.zip && \
     sed 's/const HOST = "localhost"/const HOST = self.location.hostname/' graphexp-master/scripts/graphConf.js > graphConf.js && \
     mv graphConf.js graphexp-master/scripts && \
