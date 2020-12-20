@@ -2,7 +2,7 @@ FROM nginx:1.15
 
 LABEL maintainer="armand.leopold@outlook.com"
 
-ARG VERSION=0.8.1
+ARG VERSION=0.8.2
 
 ENV http_proxy $http_proxy
 ENV https_proxy $https_proxy
